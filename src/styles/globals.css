@@ -2,48 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
- font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .background-image {
- background-image: url('/Ellipse.png'); 
- background-size: cover;
- background-position: center;
- background-repeat: no-repeat;
- border-radius: 9999px;
+  background-image: url('/Ellipse.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 9999px;
 }
 
 @keyframes waveAnimation {
- 0% {
-   transform: scale(0);
-   opacity: 1;
- }
- 25% {
-   transform: scale(1.5); 
-   opacity: 0.5;
- }
- 50% {
-   transform: scale(2); 
-   opacity: 0.5;
- }
- 75% {
-   transform: scale(2.5); 
-   opacity: 0.5;
- }
- 100% {
-   transform: scale(3);
-   opacity: 0;
- }
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.5); 
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(2); 
+    opacity: 0.5;
+  }
+  75% {
+    transform: scale(2.5); 
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
 }
 
 .wave-effect {
- position: absolute;
- border-radius: 50%;
- border: 3px solid #644D9A;
- pointer-events: none;
- animation: waveAnimation 1s ease-out;
- z-index: 1;
- transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #644D9A;
+  pointer-events: none;
+  animation: waveAnimation 1s ease-out;
+  z-index: 1;
+  transform: translate(-50%, -50%);
 }
